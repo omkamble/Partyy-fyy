@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>726182163155-ia9n2312akghntr48g7aa9ulr63184rl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.726182163155-ia9n2312akghntr48g7aa9ulr63184rl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYj-u2tSdFH3WQw_sxS9-iowCs5qlFbV8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>726182163155</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Om-Kamble.Partifyyy</string>
+	<key>PROJECT_ID</key>
+	<string>partifyyy-a9c75</string>
+	<key>STORAGE_BUCKET</key>
+	<string>partifyyy-a9c75.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:726182163155:ios:414cd773f974d085471a26</string>
+</dict>
+</plist>
