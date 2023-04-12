@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1088" y="65"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="gPv-wI-VYe">
             <objects>
-                <viewController id="SeU-Ev-goV" customClass="ViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SeU-Ev-goV" customClass="registerViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LYJ-gw-aGB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,15 +106,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reg" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" title="Register" cornerStyle="capsule">
                                     <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerButton:" destination="SeU-Ev-goV" eventType="touchUpInside" id="GLk-C9-yLf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qJN-Ps-qt0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="dol-22-5tv"/>
+                    <connections>
+                        <outlet property="emailiD" destination="bKX-Dd-2Q8" id="StL-OV-zpI"/>
+                        <outlet property="passwordF" destination="WNb-If-YNh" id="rRN-YZ-DwL"/>
+                        <segue destination="kfo-ai-rqo" kind="push" identifier="registerPass" id="0mI-Jh-Mb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72s-bl-CuQ" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="102.89855072463769" y="64.955357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="P9U-y0-jYW">
             <objects>
-                <viewController id="KTd-Ye-K1c" customClass="ViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KTd-Ye-K1c" customClass="loginViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CcN-5O-RWl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,21 +179,58 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reg" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
                                     <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="LoginButton:" destination="KTd-Ye-K1c" eventType="touchUpInside" id="stk-FK-PNc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gia-Nh-Q7S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vor-mq-hk6"/>
+                    <connections>
+                        <outlet property="emailID" destination="FAN-ao-5xj" id="con-Cj-bnR"/>
+                        <outlet property="passwordf" destination="zza-wg-Ie2" id="bJm-Ae-I7o"/>
+                        <segue destination="kfo-ai-rqo" kind="push" identifier="loginPass" id="4b3-bf-UxO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybT-03-eLq" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1087" y="946"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="vxf-6g-i0l">
+            <objects>
+                <viewController id="kfo-ai-rqo" customClass="registerViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nhe-Q8-TG8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="xMO-3g-8Vs">
+                                <rect key="frame" x="-294" y="-837" width="962" height="2515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Partifyyy-2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOC-ZV-SeL">
+                                <rect key="frame" x="35" y="119" width="344" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HEf-TZ-dza"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HEh-4L-nZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-tn-diW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3267" y="449"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4b3-bf-UxO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Partifyyy-2" width="125" height="125"/>
         <image name="Untitled design" width="166.5" height="166.5"/>
