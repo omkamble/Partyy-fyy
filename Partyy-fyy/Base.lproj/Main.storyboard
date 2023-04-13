@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQZ-9j-fet">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQZ-9j-fet">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -217,18 +218,44 @@
                                 <rect key="frame" x="35" y="119" width="344" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-Xl-crQ">
-                                <rect key="frame" x="73" y="390" width="269" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Song 1" cornerStyle="capsule"/>
-                                <connections>
-                                    <action selector="playButton1:" destination="kfo-ai-rqo" eventType="touchUpInside" id="7z7-z2-1Y1"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="DmR-sh-TmT">
+                                <rect key="frame" x="120" y="563" width="174" height="249"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-Xl-crQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Song 1" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="SongOnePressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="Ws7-pZ-Vae"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-RY-0Fb">
+                                        <rect key="frame" x="0.0" y="119" width="174" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                        <connections>
+                                            <action selector="playPressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="8gG-sA-16G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2fd-xJ-HjC">
+                                        <rect key="frame" x="0.0" y="214.5" width="174" height="34.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopPressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="jL6-Id-Z9a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HEf-TZ-dza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DmR-sh-TmT" firstAttribute="leading" secondItem="HEf-TZ-dza" secondAttribute="leading" constant="120" id="OFL-fJ-0tY"/>
+                            <constraint firstItem="HEf-TZ-dza" firstAttribute="bottom" secondItem="DmR-sh-TmT" secondAttribute="bottom" constant="50" id="gH6-1T-E5z"/>
+                            <constraint firstItem="HEf-TZ-dza" firstAttribute="trailing" secondItem="DmR-sh-TmT" secondAttribute="trailing" constant="120" id="iFu-6c-dxK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HEh-4L-nZh"/>
                 </viewController>

@@ -18,10 +18,24 @@ class songViewController: UIViewController {
     }
     
     
-    @IBAction func playButton1(_ sender: UIButton) {
+    @IBAction func SongOnePressed(_ sender: UIButton) {
         playSound()
     }
     
+    @IBAction func playPressed(_ sender: UIButton) {
+        if let player = player {
+            player.play()
+        } else {
+            playSound()
+        }
+    }
+    
+    @IBAction func stopPressed(_ sender: UIButton) {
+        if let player = player {
+            player.stop()
+            self.player = nil
+        }
+    }
     
     func playSound() {
         guard let url = Bundle.main.url(forResource: "aiseNaMujhe", withExtension: "mp3") else { return }
@@ -44,5 +58,4 @@ class songViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    
 }
