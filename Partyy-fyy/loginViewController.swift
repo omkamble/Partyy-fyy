@@ -24,7 +24,7 @@ class loginViewController: UIViewController {
                 if let e = error{
                     print(e)
                 }else{
-                    self.performSegue(withIdentifier: "loginPass", sender: self)
+                    self?.performSegue(withIdentifier: "loginPass", sender: self)
                 }
             }
         }

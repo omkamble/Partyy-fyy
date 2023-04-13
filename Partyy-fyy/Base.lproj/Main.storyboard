@@ -33,7 +33,7 @@
                                             <constraint firstAttribute="height" constant="50" id="xz6-46-e7v"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                         <connections>
                                             <segue destination="SeU-Ev-goV" kind="push" id="dyT-CN-3HF"/>
                                         </connections>
@@ -45,7 +45,7 @@
                                             <constraint firstAttribute="height" constant="50" id="XoD-Rk-oI2"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Login"/>
                                         <connections>
                                             <segue destination="KTd-Ye-K1c" kind="push" id="79j-RM-Trf"/>
                                         </connections>
@@ -121,7 +121,7 @@
                     <connections>
                         <outlet property="emailiD" destination="bKX-Dd-2Q8" id="StL-OV-zpI"/>
                         <outlet property="passwordF" destination="WNb-If-YNh" id="rRN-YZ-DwL"/>
-                        <segue destination="kfo-ai-rqo" kind="push" identifier="registerPass" id="0mI-Jh-Mb2"/>
+                        <segue destination="xTi-IH-kgw" kind="push" identifier="registerPass" id="q7Q-ca-arD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72s-bl-CuQ" sceneMemberID="firstResponder"/>
@@ -194,17 +194,17 @@
                     <connections>
                         <outlet property="emailID" destination="FAN-ao-5xj" id="con-Cj-bnR"/>
                         <outlet property="passwordf" destination="zza-wg-Ie2" id="bJm-Ae-I7o"/>
-                        <segue destination="kfo-ai-rqo" kind="push" identifier="loginPass" id="4b3-bf-UxO"/>
+                        <segue destination="xTi-IH-kgw" kind="push" identifier="loginPass" id="iiy-1g-njA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybT-03-eLq" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1087" y="946"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Song View Controller-->
         <scene sceneID="vxf-6g-i0l">
             <objects>
-                <viewController id="kfo-ai-rqo" customClass="registerViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kfo-ai-rqo" customClass="songViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhe-Q8-TG8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,6 +217,15 @@
                                 <rect key="frame" x="35" y="119" width="344" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-Xl-crQ">
+                                <rect key="frame" x="73" y="390" width="269" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Song 1" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="playButton1:" destination="kfo-ai-rqo" eventType="touchUpInside" id="7z7-z2-1Y1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HEf-TZ-dza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -225,11 +234,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-tn-diW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3267" y="449"/>
+            <point key="canvasLocation" x="3266.666666666667" y="448.66071428571428"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="ycz-5q-Hnd">
+            <objects>
+                <viewController id="kRT-Tr-G0S" customClass="videoViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D8d-1t-ycE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-NP-k63">
+                                <rect key="frame" x="-294" y="-837" width="962" height="2515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Partifyyy-2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgR-2z-QtB">
+                                <rect key="frame" x="35" y="119" width="344" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlp-vk-RGU">
+                                <rect key="frame" x="73" y="390" width="269" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Video 1" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="playButton1:" destination="kRT-Tr-G0S" eventType="touchUpInside" id="t24-Yv-rUq"/>
+                                    <action selector="videoButton:" destination="gjk-h9-jJr" eventType="touchUpInside" id="mvw-x4-2PV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-rV-0Sp">
+                                <rect key="frame" x="54" y="532" width="307" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qpx-Pg-Nzy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ahZ-bu-0Cy"/>
+                    <connections>
+                        <outlet property="viewPlay" destination="dJB-rV-0Sp" id="YmX-MV-PXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b22-aL-pRi" sceneMemberID="firstResponder"/>
+                <exit id="gjk-h9-jJr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3266.666666666667" y="1269.6428571428571"/>
+        </scene>
+        <!--Song View Controller-->
+        <scene sceneID="QKn-3E-gNw">
+            <objects>
+                <viewController id="xTi-IH-kgw" customClass="songViewController" customModule="Partyy_fyy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y2r-08-GNq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="RsL-qM-dOb">
+                                <rect key="frame" x="-294" y="-837" width="962" height="2515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Partifyyy-2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MkE-mn-lsc">
+                                <rect key="frame" x="35" y="119" width="344" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v87-eN-DM1">
+                                <rect key="frame" x="48" y="624" width="318" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Watch Videos Instead"/>
+                                <connections>
+                                    <segue destination="kRT-Tr-G0S" kind="push" id="1Kx-wY-xxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-xc-3ac">
+                                <rect key="frame" x="48" y="518" width="318" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="listen to songs"/>
+                                <connections>
+                                    <segue destination="kfo-ai-rqo" kind="push" id="Tr5-ik-MVO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jZl-kc-cIt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="df2-Gq-tQ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQ3-q0-oQI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="895"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4b3-bf-UxO"/>
+        <segue reference="iiy-1g-njA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Partifyyy-2" width="125" height="125"/>

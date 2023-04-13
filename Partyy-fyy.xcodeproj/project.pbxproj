@@ -43,6 +43,11 @@
 		2EB8F70229E66BC900B6C498 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F70129E66BC900B6C498 /* FirebaseRemoteConfigSwift */; };
 		2EB8F70429E66BC900B6C498 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F70329E66BC900B6C498 /* FirebaseStorage */; };
 		2EB8F70629E66BC900B6C498 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F70529E66BC900B6C498 /* FirebaseStorageCombine-Community */; };
+		2EB8F70929E6700400B6C498 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2EB8F70829E6700400B6C498 /* IQKeyboardManagerSwift */; };
+		2EB8F70B29E6709500B6C498 /* songViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F70A29E6709500B6C498 /* songViewController.swift */; };
+		2EB8F70D29E6717000B6C498 /* aiseNaMujhe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F70C29E6716F00B6C498 /* aiseNaMujhe.mp3 */; };
+		2EB8F70F29E6725B00B6C498 /* videoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F70E29E6725B00B6C498 /* videoViewController.swift */; };
+		2EEEE3E629E72D4500BFD4EE /* closer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE3E529E72D4400BFD4EE /* closer.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,10 @@
 		2EB8F6CA29E662A200B6C498 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		2EB8F6CC29E662BE00B6C498 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		2EB8F6CE29E663C500B6C498 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EB8F70A29E6709500B6C498 /* songViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songViewController.swift; sourceTree = "<group>"; };
+		2EB8F70C29E6716F00B6C498 /* aiseNaMujhe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aiseNaMujhe.mp3; sourceTree = "<group>"; };
+		2EB8F70E29E6725B00B6C498 /* videoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoViewController.swift; sourceTree = "<group>"; };
+		2EEEE3E529E72D4400BFD4EE /* closer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = closer.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 				2EB8F6DC29E66BC900B6C498 /* FirebaseAppDistribution-Beta in Frameworks */,
 				2EB8F6E029E66BC900B6C498 /* FirebaseAuthCombine-Community in Frameworks */,
 				2EB8F6FE29E66BC900B6C498 /* FirebasePerformance in Frameworks */,
+				2EB8F70929E6700400B6C498 /* IQKeyboardManagerSwift in Frameworks */,
 				2EB8F6F629E66BC900B6C498 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				2EB8F70429E66BC900B6C498 /* FirebaseStorage in Frameworks */,
 				2EB8F6E829E66BC900B6C498 /* FirebaseDynamicLinks in Frameworks */,
@@ -120,12 +130,16 @@
 				2E2F866D29E3E0F5003B4692 /* SceneDelegate.swift */,
 				2E2F866F29E3E0F5003B4692 /* ViewController.swift */,
 				2E2F867129E3E0F5003B4692 /* Main.storyboard */,
+				2EB8F70E29E6725B00B6C498 /* videoViewController.swift */,
+				2EB8F70A29E6709500B6C498 /* songViewController.swift */,
 				2EB8F6CA29E662A200B6C498 /* registerViewController.swift */,
 				2EB8F6CC29E662BE00B6C498 /* loginViewController.swift */,
 				2E2F867429E3E0FA003B4692 /* Assets.xcassets */,
 				2E2F867629E3E0FA003B4692 /* LaunchScreen.storyboard */,
 				2E2F867929E3E0FA003B4692 /* Info.plist */,
 				2EB8F6CE29E663C500B6C498 /* GoogleService-Info.plist */,
+				2EB8F70C29E6716F00B6C498 /* aiseNaMujhe.mp3 */,
+				2EEEE3E529E72D4400BFD4EE /* closer.mp4 */,
 			);
 			path = "Partyy-fyy";
 			sourceTree = "<group>";
@@ -174,6 +188,7 @@
 				2EB8F70129E66BC900B6C498 /* FirebaseRemoteConfigSwift */,
 				2EB8F70329E66BC900B6C498 /* FirebaseStorage */,
 				2EB8F70529E66BC900B6C498 /* FirebaseStorageCombine-Community */,
+				2EB8F70829E6700400B6C498 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Partyy-fyy";
 			productReference = 2E2F866829E3E0F5003B4692 /* Partyy-fyy.app */;
@@ -205,6 +220,7 @@
 			mainGroup = 2E2F865F29E3E0F5003B4692;
 			packageReferences = (
 				2EB8F6D029E66BC900B6C498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2EB8F70729E6700400B6C498 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 2E2F866929E3E0F5003B4692 /* Products */;
 			projectDirPath = "";
@@ -224,6 +240,8 @@
 				2EB8F6CF29E663C500B6C498 /* GoogleService-Info.plist in Resources */,
 				2E2F867529E3E0FA003B4692 /* Assets.xcassets in Resources */,
 				2E2F867329E3E0F5003B4692 /* Main.storyboard in Resources */,
+				2EB8F70D29E6717000B6C498 /* aiseNaMujhe.mp3 in Resources */,
+				2EEEE3E629E72D4500BFD4EE /* closer.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2F867029E3E0F5003B4692 /* ViewController.swift in Sources */,
+				2EB8F70F29E6725B00B6C498 /* videoViewController.swift in Sources */,
 				2E2F866C29E3E0F5003B4692 /* AppDelegate.swift in Sources */,
 				2E2F866E29E3E0F5003B4692 /* SceneDelegate.swift in Sources */,
 				2EB8F6CB29E662A200B6C498 /* registerViewController.swift in Sources */,
 				2EB8F6CD29E662BE00B6C498 /* loginViewController.swift in Sources */,
+				2EB8F70B29E6709500B6C498 /* songViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +486,14 @@
 				kind = branch;
 			};
 		};
+		2EB8F70729E6700400B6C498 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -603,6 +631,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2EB8F6D029E66BC900B6C498 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		2EB8F70829E6700400B6C498 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EB8F70729E6700400B6C498 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
