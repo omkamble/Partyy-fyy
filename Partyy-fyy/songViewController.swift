@@ -13,10 +13,7 @@ class songViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-    
     
     @IBAction func SongOnePressed(_ sender: UIButton) {
         playSound()

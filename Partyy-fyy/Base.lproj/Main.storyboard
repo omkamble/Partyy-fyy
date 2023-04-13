@@ -24,38 +24,38 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-o8-g5F">
                                 <rect key="frame" x="30" y="102" width="354" height="750"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Partifyyy-2" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-2P-PQl">
-                                        <rect key="frame" x="30" y="0.0" width="294" height="650"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="Partifyyy-2" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-2P-PQl">
+                                        <rect key="frame" x="30" y="0.0" width="294" height="625"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSy-1v-PdZ">
-                                        <rect key="frame" x="27" y="650" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="km7-Y2-ZVp"/>
-                                            <constraint firstAttribute="height" constant="50" id="xz6-46-e7v"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Register"/>
-                                        <connections>
-                                            <segue destination="SeU-Ev-goV" kind="push" id="dyT-CN-3HF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-YY-Vef">
-                                        <rect key="frame" x="27" y="700" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="0ct-lQ-Arb"/>
-                                            <constraint firstAttribute="height" constant="50" id="XoD-Rk-oI2"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Login"/>
-                                        <connections>
-                                            <segue destination="KTd-Ye-K1c" kind="push" id="79j-RM-Trf"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="Nuq-9v-cCF">
+                                        <rect key="frame" x="100" y="625" width="154" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSy-1v-PdZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                                <connections>
+                                                    <segue destination="SeU-Ev-goV" kind="push" id="dyT-CN-3HF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-YY-Vef">
+                                                <rect key="frame" x="0.0" y="90.5" width="154" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Login"/>
+                                                <connections>
+                                                    <segue destination="KTd-Ye-K1c" kind="push" id="79j-RM-Trf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Nuq-9v-cCF" secondAttribute="bottom" constant="30" id="2lw-j7-STa"/>
                                     <constraint firstAttribute="trailing" secondItem="Oyh-2P-PQl" secondAttribute="trailing" constant="30" id="5ld-zA-T0A"/>
                                     <constraint firstItem="Oyh-2P-PQl" firstAttribute="leading" secondItem="ms2-o8-g5F" secondAttribute="leading" constant="30" id="GAD-Sr-KeT"/>
                                     <constraint firstItem="Oyh-2P-PQl" firstAttribute="top" secondItem="ms2-o8-g5F" secondAttribute="top" constant="10" id="aJe-DW-Lo8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nuq-9v-cCF" secondAttribute="trailing" constant="100" id="lgz-G0-BHG"/>
+                                    <constraint firstItem="Nuq-9v-cCF" firstAttribute="leading" secondItem="ms2-o8-g5F" secondAttribute="leading" constant="100" id="tIg-JV-nxq"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="65"/>
+            <point key="canvasLocation" x="1086.9565217391305" y="64.955357142857139"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="gPv-wI-VYe">
