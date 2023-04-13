@@ -285,8 +285,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Video 1" cornerStyle="capsule"/>
                                 <connections>
-                                    <action selector="playButton1:" destination="kRT-Tr-G0S" eventType="touchUpInside" id="t24-Yv-rUq"/>
-                                    <action selector="videoButton:" destination="gjk-h9-jJr" eventType="touchUpInside" id="mvw-x4-2PV"/>
+                                    <action selector="videoButton:" destination="kRT-Tr-G0S" eventType="touchUpInside" id="iwd-gE-scc"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-rV-0Sp">
@@ -304,7 +303,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b22-aL-pRi" sceneMemberID="firstResponder"/>
-                <exit id="gjk-h9-jJr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3266.666666666667" y="1269.6428571428571"/>
         </scene>
