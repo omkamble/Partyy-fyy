@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQZ-9j-fet">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQZ-9j-fet">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,38 +24,38 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-o8-g5F">
                                 <rect key="frame" x="30" y="102" width="354" height="750"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Partifyyy-2" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-2P-PQl">
-                                        <rect key="frame" x="30" y="0.0" width="294" height="650"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="Partifyyy-2" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-2P-PQl">
+                                        <rect key="frame" x="30" y="0.0" width="294" height="625"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSy-1v-PdZ">
-                                        <rect key="frame" x="27" y="650" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="km7-Y2-ZVp"/>
-                                            <constraint firstAttribute="height" constant="50" id="xz6-46-e7v"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Register"/>
-                                        <connections>
-                                            <segue destination="SeU-Ev-goV" kind="push" id="dyT-CN-3HF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-YY-Vef">
-                                        <rect key="frame" x="27" y="700" width="300" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="0ct-lQ-Arb"/>
-                                            <constraint firstAttribute="height" constant="50" id="XoD-Rk-oI2"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Login"/>
-                                        <connections>
-                                            <segue destination="KTd-Ye-K1c" kind="push" id="79j-RM-Trf"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="Nuq-9v-cCF">
+                                        <rect key="frame" x="100" y="625" width="154" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSy-1v-PdZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                                <connections>
+                                                    <segue destination="SeU-Ev-goV" kind="push" id="dyT-CN-3HF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43x-YY-Vef">
+                                                <rect key="frame" x="0.0" y="90.5" width="154" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Login"/>
+                                                <connections>
+                                                    <segue destination="KTd-Ye-K1c" kind="push" id="79j-RM-Trf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Nuq-9v-cCF" secondAttribute="bottom" constant="30" id="2lw-j7-STa"/>
                                     <constraint firstAttribute="trailing" secondItem="Oyh-2P-PQl" secondAttribute="trailing" constant="30" id="5ld-zA-T0A"/>
                                     <constraint firstItem="Oyh-2P-PQl" firstAttribute="leading" secondItem="ms2-o8-g5F" secondAttribute="leading" constant="30" id="GAD-Sr-KeT"/>
                                     <constraint firstItem="Oyh-2P-PQl" firstAttribute="top" secondItem="ms2-o8-g5F" secondAttribute="top" constant="10" id="aJe-DW-Lo8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nuq-9v-cCF" secondAttribute="trailing" constant="100" id="lgz-G0-BHG"/>
+                                    <constraint firstItem="Nuq-9v-cCF" firstAttribute="leading" secondItem="ms2-o8-g5F" secondAttribute="leading" constant="100" id="tIg-JV-nxq"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="65"/>
+            <point key="canvasLocation" x="1086.9565217391305" y="64.955357142857139"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="gPv-wI-VYe">
@@ -93,13 +94,13 @@
                                 <rect key="frame" x="66" y="476" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-If-YNh">
                                 <rect key="frame" x="66" y="576" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5o-x4-7ok">
                                 <rect key="frame" x="117" y="728" width="180" height="35"/>
@@ -162,17 +163,17 @@
                                 <rect key="frame" x="35" y="119" width="344" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL-ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-ao-5xj">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="om69@gmail.com" borderStyle="roundedRect" placeholder="EMAIL-ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-ao-5xj">
                                 <rect key="frame" x="66" y="476" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zza-wg-Ie2">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234567" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zza-wg-Ie2">
                                 <rect key="frame" x="66" y="576" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-sv-F6r">
                                 <rect key="frame" x="117" y="728" width="180" height="35"/>
@@ -217,18 +218,44 @@
                                 <rect key="frame" x="35" y="119" width="344" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-Xl-crQ">
-                                <rect key="frame" x="73" y="390" width="269" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Song 1" cornerStyle="capsule"/>
-                                <connections>
-                                    <action selector="playButton1:" destination="kfo-ai-rqo" eventType="touchUpInside" id="7z7-z2-1Y1"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="DmR-sh-TmT">
+                                <rect key="frame" x="120" y="563" width="174" height="249"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-Xl-crQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Song 1" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="SongOnePressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="Ws7-pZ-Vae"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-RY-0Fb">
+                                        <rect key="frame" x="0.0" y="119" width="174" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                        <connections>
+                                            <action selector="playPressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="8gG-sA-16G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2fd-xJ-HjC">
+                                        <rect key="frame" x="0.0" y="214.5" width="174" height="34.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopPressed:" destination="kfo-ai-rqo" eventType="touchUpInside" id="jL6-Id-Z9a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HEf-TZ-dza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DmR-sh-TmT" firstAttribute="leading" secondItem="HEf-TZ-dza" secondAttribute="leading" constant="120" id="OFL-fJ-0tY"/>
+                            <constraint firstItem="HEf-TZ-dza" firstAttribute="bottom" secondItem="DmR-sh-TmT" secondAttribute="bottom" constant="50" id="gH6-1T-E5z"/>
+                            <constraint firstItem="HEf-TZ-dza" firstAttribute="trailing" secondItem="DmR-sh-TmT" secondAttribute="trailing" constant="120" id="iFu-6c-dxK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HEh-4L-nZh"/>
                 </viewController>
@@ -258,8 +285,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Video 1" cornerStyle="capsule"/>
                                 <connections>
-                                    <action selector="playButton1:" destination="kRT-Tr-G0S" eventType="touchUpInside" id="t24-Yv-rUq"/>
-                                    <action selector="videoButton:" destination="gjk-h9-jJr" eventType="touchUpInside" id="mvw-x4-2PV"/>
+                                    <action selector="videoButton:" destination="kRT-Tr-G0S" eventType="touchUpInside" id="iwd-gE-scc"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-rV-0Sp">
@@ -277,7 +303,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b22-aL-pRi" sceneMemberID="firstResponder"/>
-                <exit id="gjk-h9-jJr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3266.666666666667" y="1269.6428571428571"/>
         </scene>
